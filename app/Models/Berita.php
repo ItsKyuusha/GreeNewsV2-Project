@@ -12,5 +12,7 @@ class Berita extends Model
     protected $fillable = [
         'judul', 'isi', 'gambar', 'publisher', 'tanggal', 'published'
     ];
-}
 
+    // Menambahkan properti $dates
+    protected $dates = ['tanggal'];
+}

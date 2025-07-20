@@ -9,6 +9,7 @@ class Tanaman extends Model
 {
     use HasFactory;
 
+    protected $table = 'tanamans';
     protected $fillable = ['nama', 'deskripsi', 'gambar'];
 }
 
