@@ -21,6 +21,7 @@ Route::get('/', [DashboardController::class, 'index'])->name('user.dashboard');
 Route::get('/berita', [BeritaController::class, 'index'])->name('user.berita');
 Route::get('/tanaman', [TanamanController::class, 'index'])->name('user.tanaman');
 Route::get('/kalkulator', [KalkulatorController::class, 'index'])->name('user.kalkulator');
+Route::post('/kalkulator/hitung', [KalkulatorController::class, 'hitung'])->name('user.kalkulator.hitung');
 Route::get('/berita/{id}', [BeritaController::class, 'show'])->name('user.berita.show');
 Route::get('/tanaman/{id}', [TanamanController::class, 'show'])->name('user.tanaman.show');
 
